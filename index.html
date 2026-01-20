@@ -19,6 +19,23 @@
       padding: 3rem 1rem;
       text-align: center;
     }
+    .header-content {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap; /* stacks on small screens */
+    }
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%; /* makes it circular */
+      object-fit: cover; /* crops nicely if not square */
+      border: 4px solid white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
     header h1 { margin: 0; font-size: 2.8rem; }
     header p { font-size: 1.3rem; margin-top: 0.5rem; }
     main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
@@ -34,26 +51,39 @@
       color: #ddd;
       font-size: 0.9rem;
     }
+
+    /* Responsive: stack photo and text on small screens */
+    @media (max-width: 600px) {
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      .profile-photo {
+        margin-bottom: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
-
 <header>
-  <h1>Dr. Denton Bobeldyk</h1>
-  <p>Associate Professor of Computer Science • Grand Valley State University</p>
+  <div class="header-content">
+    <img src="images/myHeadshot.jpg" alt="Dr. Denton Bobeldyk" class="profile-photo">
+    <div>
+      <h1>Dr. Denton Bobeldyk</h1>
+      <p>Associate Professor of Computer Science • Grand Valley State University</p>
+    </div>
+  </div>
 </header>
-
 <main>
   <section>
     <h2>About</h2>
     <p>
-      I am an Associate Professor of Computer Science at Grand Valley State University. 
-      My teaching and research interests include artificial intelligence, machine learning, 
-      operating systems, and making complex CS topics accessible 
+      I am an Associate Professor of Computer Science at Grand Valley State University.
+      My teaching and research interests include artificial intelligence, machine learning,
+      operating systems, and making complex CS topics accessible
       and fun for undergraduates.
     </p>
   </section>
-
   <section>
     <h2>Teaching</h2>
     <ul>
@@ -63,7 +93,6 @@
       <li>CIS 263 Data Structures and Algorithms</li>
     </ul>
   </section>
-
   <section>
     <h2>Contact</h2>
     <p>
@@ -72,21 +101,18 @@
       Phone: (616) 555-1234
     </p>
   </section>
-
   <section>
     <h2>Links</h2>
     <ul>
       <li><a href="https://gvsu.edu" target="_blank">Grand Valley State University</a></li>
       <li><a href="https://www.gvsu.edu/computing" target="_blank">School of Computing</a></li>
       <li><a href="https://github.com/bobeldyd" target="_blank">GitHub Profile</a></li>
-      <li><a href="https://scholar.google.com/citations?user=dbobeldyk" target="_blank">Google Scholar</a> (add your ID)</li>
+      <li><a href="https://scholar.google.com/citations?user=rF6upEIAAAAJ" target="_blank">Google Scholar</a></li>
     </ul>
   </section>
 </main>
-
 <footer>
   © 2025 Denton Bobeldyk • Hosted on GitHub Pages
 </footer>
-
 </body>
 </html>

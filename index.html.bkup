@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Denton Bobeldyk</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 2.8rem; }
+    header p { font-size: 1.3rem; margin-top: 0.5rem; }
+    main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+    section { margin-bottom: 3rem; }
+    h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 0.3rem; }
+    ul { padding-left: 1.5rem; }
+    a { color: #3498db; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #2c3e50;
+      color: #ddd;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Dr. Denton Bobeldyk</h1>
+  <p>Associate Professor of Computer Science • Grand Valley State University</p>
+</header>
+
+<main>
+  <section>
+    <h2>About</h2>
+    <p>
+      I am an Associate Professor of Computer Science at Grand Valley State University. 
+      My teaching and research interests include artificial intelligence, machine learning, 
+      operating systems, and making complex CS topics accessible 
+      and fun for undergraduates.
+    </p>
+  </section>
+
+  <section>
+    <h2>Teaching</h2>
+    <ul>
+      <li>AI 201 Introduction to Computing</li>
+      <li>CIS 452 Operating System Concepts</li>
+      <li>CIS 378 Machine Learning</li>
+      <li>CIS 263 Data Structures and Algorithms</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      Email: <a href="mailto:bobeldyd@gvsu.edu">bobeldyd@gvsu.edu</a><br>
+      Office: Mackinac Hall D-2-208<br>
+      Phone: (616) 555-1234
+    </p>
+  </section>
+
+  <section>
+    <h2>Links</h2>
+    <ul>
+      <li><a href="https://gvsu.edu" target="_blank">Grand Valley State University</a></li>
+      <li><a href="https://www.gvsu.edu/computing" target="_blank">School of Computing</a></li>
+      <li><a href="https://github.com/bobeldyd" target="_blank">GitHub Profile</a></li>
+      <li><a href="https://scholar.google.com/citations?user=dbobeldyk" target="_blank">Google Scholar</a> (add your ID)</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  © 2025 Denton Bobeldyk • Hosted on GitHub Pages
+</footer>
+
+</body>
+</html>

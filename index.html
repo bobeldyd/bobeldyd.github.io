@@ -6,38 +6,34 @@
   <title>Dr. Denton Bobeldyk</title>
   <style>
     :root {
-      --gvsu-blue: #0032A0;       /* Official GVSU primary blue */
+      --gvsu-blue: #0032A0;       
       --dark-bg: #0d1b3a;
       --nav-bg: #1a2e5c;
       --accent-active: #0055cc;
       --text-light: #e0e8ff;
     }
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       background: #f5f7fa;
       color: #333;
       line-height: 1.6;
     }
-
     .hero {
       position: relative;
       min-height: 400px;
       background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.35)),
-		url('images/allendaleAerialView.jpg') center center / cover no-repeat scroll;
+    url('images/allendaleAerialView.jpg') center center / cover no-repeat scroll;
       color: white;
       padding: 4rem 2rem;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-
     .hero-content {
       max-width: 1100px;
       width: 100%;
@@ -46,7 +42,6 @@
       gap: 3rem;
       flex-wrap: wrap;
     }
-
     .profile-circle {
       flex-shrink: 0;
       width: 220px;
@@ -56,67 +51,57 @@
       border: 8px solid rgba(255,255,255,0.9);
       box-shadow: 0 12px 30px rgba(0,0,0,0.5);
     }
-
     .profile-circle img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-
     .text-block {
       flex: 1;
       min-width: 300px;
     }
-
     .name {
       font-size: 4.5rem;
       font-weight: 800;
       margin-bottom: 0.6rem;
       letter-spacing: -1.5px;
     }
-
     .subtitle {
       font-size: 1.5rem;
       opacity: 0.95;
       max-width: 700px;
       color: white;
     }
-
     .nav {
       background: var(--nav-bg);
       text-align: center;
       border-bottom: 2px solid #2a4a8c;
     }
-
     .tab {
-      max-width: 1200px; /* Wider to fit more tabs */
+      max-width: 1200px;
       margin: 0 auto;
       display: inline-flex;
       list-style: none;
-      flex-wrap: wrap; /* Allow wrapping on small screens */
+      flex-wrap: wrap;
       justify-content: center;
     }
-
     .tab button {
       background: transparent;
       border: none;
       color: white;
-      padding: 1.2rem 1.8rem; /* Slightly narrower padding for more tabs */
+      padding: 1.2rem 1.8rem;
       font-size: 1.1rem;
       font-weight: 500;
       cursor: pointer;
       transition: all 0.25s;
     }
-
     .tab button:hover {
       background: rgba(255,255,255,0.1);
     }
-
     .tab button.active {
       background: var(--accent-active);
       border-bottom: 4px solid white;
     }
-
     .tabcontent {
       display: none;
       padding: 3rem 2rem;
@@ -127,12 +112,10 @@
       border-radius: 8px;
       animation: fadeIn 0.4s;
     }
-
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
     h2 {
       color: var(--gvsu-blue);
       font-size: 2.3rem;
@@ -141,33 +124,27 @@
       padding-bottom: 0.6rem;
       display: inline-block;
     }
-
     h3 {
       color: #444;
       font-size: 1.6rem;
       margin: 2rem 0 1rem;
     }
-
     p, ul {
       font-size: 1.15rem;
       color: #444;
       max-width: 900px;
     }
-
     ul {
       padding-left: 2rem;
       margin: 1rem 0;
     }
-
     a {
       color: var(--gvsu-blue);
       text-decoration: none;
     }
-
     a:hover {
       text-decoration: underline;
     }
-
     footer {
       text-align: center;
       padding: 2.5rem 1rem;
@@ -175,12 +152,10 @@
       color: var(--text-light);
       font-size: 0.95rem;
     }
-
     footer a {
       color: #6bb3ff;
       margin: 0 1rem;
     }
-
     @media (max-width: 768px) {
       .hero { padding: 3rem 1rem; min-height: auto; }
       .hero-content { flex-direction: column; text-align: center; gap: 2rem; }
@@ -193,7 +168,6 @@
   </style>
 </head>
 <body>
-
   <header class="hero">
     <div class="hero-content">
       <div class="profile-circle">
@@ -215,12 +189,13 @@
       <button class="tablinks" onclick="openTab(event, 'Research')">Research</button>
       <button class="tablinks" onclick="openTab(event, 'People')">People</button>
       <button class="tablinks" onclick="openTab(event, 'Coral')">Coral Project</button>
+      <button class="tablinks" onclick="openTab(event, 'Media')">Media</button>
       <button class="tablinks" onclick="openTab(event, 'Sponsors')">Sponsor Opportunities</button>
     </div>
   </nav>
 
   <main>
-      <!-- About Tab (default open) -->
+      <!-- About Tab -->
       <div id="About" class="tabcontent" style="display: block;">
           <h2>About</h2>
           <p>
@@ -233,7 +208,7 @@
       <!-- Teaching Tab -->
       <div id="Teaching" class="tabcontent">
           <h2>Teaching</h2>
-          <p>Courses that I regulary teach/involved in:</p>
+          <p>Courses that I regularly teach/involved in:</p>
           <ul>
               <li><a href="https://www.gvsu.edu/catalog/course/cis-365.htm" target="_blank" rel="noopener">AI 201 Introduction to Artificial Intelligence</a></li>
               <li><a href="https://www.gvsu.edu/catalog/course/ai-421.htm" target="_blank" rel="noopener">AI 421/521 Applied Computer Vision</a></li>
@@ -251,35 +226,30 @@
           <p>
               My research areas of interest are pattern recognition, applied machine learning, artificial intelligence, biometrics, generative art and computer vision.
           </p>
-
       </div>
+
       <!-- People Tab -->
       <div id="People" class="tabcontent">
           <h2>People</h2>
-          <p>
-              I collaborate with talented students, postdocs, and colleagues at GVSU and beyond on research in AI, ML, and computer vision.
-          </p>
-
+          <p>Students I have collaborated with:</p>
           <h3>Former Research Assistants</h3>
           <ul>
-              <li>Dat N., Data Analyst, Ngân hàng TMCP Hàng Hải</li>
-              <li>Minh T., Research AI Engineer, VinSmart Future</li>
+              <li>Dat Nguyen, Data Analyst, Ngân hàng TMCP Hàng Hải</li>
+              <li>Minh Tran, Research AI Engineer, VinSmart Future</li>
               <li>Tyson Bobeldyk, Undergraduate Student, Calvin University</li>
-              <li>Grace M., Automation Engineer, Shaw Industries</li>
+              <li>Grace Minai., Automation Engineer, Shaw Industries</li>
               <li>Madan K C, S3 Technical Solutions</li>
           </ul>
-
           <h3>Former Independent Studies/Projects</h3>
           <ul>
               <li>David McMullen, Undergraduate Student, Grand Valley State University</li>
-              <li>Andrew Kase, Undergraduate Student, Grand Valley State University</li>
-              <li>Ryan H, TE Coach, University of Sioux Falls</li>
+              <li>Andrew Kase, Software Engineer, TGW Logistics</li>
+              <li>Ryan Howe, TE Coach, University of Sioux Falls</li>
           </ul>
-
-          <p>If you're a student interested in doing an independent study with an excellent academic record, feel free to reach out via email</p>
+          <p>If you are a student with a strong academic background or high motivational drive, I welcome inquiries about potential independent study opportunities</p>
       </div>
 
-      <!-- Coral Project Tab (new) -->
+      <!-- Coral Project Tab -->
       <div id="Coral" class="tabcontent">
           <h2>Coral Project</h2>
           <p>
@@ -294,14 +264,40 @@
           </ul>
       </div>
 
-      <!-- Sponsor Opportunities Tab (new) -->
+      <!-- New Media Tab -->
+      <div id="Media" class="tabcontent">
+          <h2>Media</h2>
+          <p>
+              Media coverage, interviews, talks, videos, and press mentions.
+          </p>
+
+          <h3>Press &amp; Coverage</h3>
+          <ul>
+              <!-- Add your media appearances here -->
+              <li><strong>Unlocking the Black Box of Technology: Rethinking Digital Literacy at GVSU</strong> – <a href="https://www.gvsu.edu/gvmagazine/unlocking-the-black-box-of-technology-3.htm" target="_blank" rel="noopener noreferrer">GVSU Magazine</a> (Year)</li>
+              <li><strong>Another Feature</strong> – Publication (Year)</li>
+          </ul>
+
+          <h3>Videos &amp; Presentations</h3>
+          <ul>
+              <li><a href="#" target="_blank">Talk Title</a> – Conference / Platform (Year)</li>
+              <li><a href="#" target="_blank">YouTube Video Title</a></li>
+          </ul>
+
+          <h3>Media Inquiries</h3>
+          <p>
+              For media inquiries, interview requests, or collaboration opportunities, please contact me at:<br>
+              <a href="mailto:bobeldyd@gvsu.edu">bobeldyd@gvsu.edu</a>
+          </p>
+      </div>
+
+      <!-- Sponsor Opportunities Tab -->
       <div id="Sponsors" class="tabcontent">
           <h2>Sponsor Opportunities</h2>
           <p>
               My research is supported by grants and partnerships.
               Opportunities exist for sponsors interested in funding projects, equipment or students.
           </p>
-
           <h3>How to Get Involved</h3>
           <p>
               Interested in sponsoring a project, providing datasets, or partnering on applied ML?
@@ -329,6 +325,5 @@
       evt.currentTarget.className += " active";
     }
   </script>
-
 </body>
 </html>
